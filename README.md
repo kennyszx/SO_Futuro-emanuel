@@ -1,4 +1,4 @@
-🌟 Propósito Principal
+# Propósito Principal
 AetherOS (del griego Aether, que significa 'el cielo superior puro') es un sistema operativo de propósito especial diseñado para enfrentar los desafíos de la investigación científica de vanguardia.
 
 Su objetivo es proporcionar una plataforma segura, colaborativa y de alto rendimiento para:
