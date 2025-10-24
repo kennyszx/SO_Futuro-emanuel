@@ -58,3 +58,10 @@ Este documento detalla los aspectos técnicos y las justificaciones de diseño d
 | **Seguridad** | Cifrado Post-Cuántico (PQC), ABAC | AES, DAC/RBAC (Permisos de usuario/grupo) |
 
 **Conclusión de la Comparación:** AetherOS se diferencia en su **especialización extrema**. Sacrifica la flexibilidad de sistemas como Linux/Windows para obtener un **rendimiento superior y una seguridad futurista** en el nicho de la ciencia de datos masivos. Su enfoque en el **ABAC** lo hace ideal para entornos de colaboración de alta seguridad.
+
+
+9. Reflexión Final
+Diseñar AuraOS me ha enseñado que un Sistema Operativo moderno es más que solo gestionar recursos; es un marco de políticas que garantiza el cumplimiento de requisitos funcionales y no funcionales.
+ * Trade-offs (Compromisos) Inevitables: Tuve que hacer compromisos claros: elegir un núcleo híbrido para ganar fiabilidad y aislamiento (como un microkernel) a expensas de una pequeña penalización de latencia en la comunicación IPC, que se mitigó con optimización de bajo nivel. En un entorno de ciudad inteligente, la fiabilidad es más crítica que la velocidad bruta de un monolítico.
+ * Seguridad como Pilar: Entendí que en un SO para infraestructura crítica, la seguridad (PBAC, Zero Trust) debe estar integrada en la arquitectura del núcleo y no ser un añadido. La gestión de recursos debe estar subordinada a la política de seguridad.
+ * El Mundo Real es Streaming: Los sistemas de archivos tradicionales no son adecuados para el flujo masivo y continuo de datos de sensores. El diseño de AuraFS (Object/Stream-Oriented) reflejó la necesidad de repensar el concepto de "archivo" como un contenedor o un stream continuo.
